@@ -1,3 +1,3 @@
-# Contest_Tracker
+# CodeForces_Contest_Tracker
 
-- Use API's to fetch Contests data from various competitive programming sites.
+- Use API's to fetch Contests data from CodeForces.
