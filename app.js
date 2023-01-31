@@ -7,9 +7,14 @@ fetch('https://codeforces.com/api/contest.list')
         if (contest.phase == "FINISHED") {
             html = document.querySelectorAll(".contest-list")[1];
         }
-        let date = new Date(contest.startTimeSeconds*1000 + (5.5 * 60 * 60 * 1000));
+        let date = new Date(contest.startTimeSeconds*1000);
+        var currentOffset = date.getTimezoneOffset();
+        var ISTOffset = 330;
+
+        var ISTTime = new Date(date.getTime() + (ISTOffset + currentOffset)*60000);
+
         let HTML = `<div class="contest-item">
-                        <p class = "date">${date.toDateString()} | ${date.toLocaleTimeString()}</p>
+                        <p class = "date">${ISTTime.toDateString()} | ${ISTTime.toLocaleTimeString()}</p>
                         <h3>${contest.name}</h1>
                         <p class = "link-item"><a href="https://codeforces.com/contest/${contest.id}">Enter Contest</a></p>
                         <p class = "about-item">${contest.phase == "BEFORE" ? "UPCOMING": contest.phase}</p>
