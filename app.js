@@ -16,7 +16,7 @@ fetch('https://codeforces.com/api/contest.list')
         let HTML = `<div class="contest-item">
                         <p class = "date">${ISTTime.toDateString()} | ${ISTTime.toLocaleTimeString()}</p>
                         <h3>${contest.name}</h1>
-                        <p class = "link-item"><a href="https://codeforces.com/contest/${contest.id}">Enter Contest</a></p>
+                        <p class = "link-item"><a target="_blank" href="https://codeforces.com/contest/${contest.id}">Enter Contest</a></p>
                         <p class = "about-item">${contest.phase == "BEFORE" ? "UPCOMING": contest.phase}</p>
                     </div>`
         html.insertAdjacentHTML("beforeend", HTML);
