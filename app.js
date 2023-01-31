@@ -7,7 +7,7 @@ fetch('https://codeforces.com/api/contest.list')
         if (contest.phase == "FINISHED") {
             html = document.querySelectorAll(".contest-list")[1];
         }
-        let date = new Date(contest.startTimeSeconds*1000);
+        let date = new Date(contest.startTimeSeconds*1000 + (5.5 * 60 * 60 * 1000));
         let HTML = `<div class="contest-item">
                         <p class = "date">${date.toDateString()} | ${date.toLocaleTimeString()}</p>
                         <h3>${contest.name}</h1>
