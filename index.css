@@ -3,6 +3,7 @@
 body {
     font-family: "Poppins", sans-serif;
     text-align: center;
+
 }
 
 .contest-list{
@@ -70,7 +71,7 @@ body {
     margin-bottom: 8px;
 }
 
-a{
+.contest-item a{
     text-decoration: none;
     color: #FFE7E7;
 }
@@ -83,7 +84,7 @@ a{
     border-radius: 8px;
 }
 
-h3{
+.contest-item h3{
     color: #041E49;
     margin: 0px 0px 8px;
     font-size: 32px;
