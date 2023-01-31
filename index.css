@@ -81,3 +81,9 @@ a{
 .contest-item:hover .link-item{
     border-radius: 8px;
 }
+
+h3{
+    color: #041E49;
+    margin: 0px 0px 8px;
+    font-size: 32px;
+}
