@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.contest-list{
+    text-align: center;
+    display: block;
+    padding: 32px;
+    width: fit-content;
+    margin: 24px auto 0;
+}
+
+.contest-item{
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #e9ddff;
+    margin: 4px;
+    padding: 32px;
+    border-radius: 32px;
+    transition: 0.2s ease-out;
+}
+
+@media only screen and (max-width: 600px) {
+    .contest-item{
+        display: block;
+        width: 80%;
+    }
+}
+.contest-item:hover{
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.contest-item .date{
+    color: #444746;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contest-item .about-item{
+    display: block;
+    text-align: center;
+    background-color: #1e192b;
+    /*color: #E8DEF8;*/
+    color: #EADDFF;
+    width: fit-content;
+    padding: 16px 32px;
+    border-radius: 16px;
+    transition: 0.2s ease-out;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+}
+
+.contest-item .link-item{
+    display: block;
+    text-align: center;
+    background-color: #31111D;
+    color: #FFD8E4;
+    width: fit-content;
+    padding: 16px 32px;
+    border-radius: 16px;
+    transition: 0.2s ease-out;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+}
+
+a{
+    text-decoration: none;
+    color: #FFE7E7;
+}
+
+.contest-item:hover .about-item{
+    border-radius: 8px;
+}
+
+.contest-item:hover .link-item{
+    border-radius: 8px;
+}
